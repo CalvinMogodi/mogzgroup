@@ -1,0 +1,217 @@
+.browse-hero .block-content {
+    padding: 120px 0;
+    background-size: cover;
+    background-position: center;
+}
+.block {
+    color: #ddd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    min-height: 300px;
+}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+.brws-pg {
+    color: #fff;
+}
+
+.brws-pg #browse-top {
+    background: #181818;
+}
+
+.browse-hero {
+    position: relative;
+}
+
+.browse-hero .block-content {
+    padding: 120px 0;
+    background-size: cover;
+    background-position: center;
+}
+.block {
+    color: #ddd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    min-height: 300px;
+}
+
+brws-pg #browse-top .row {
+    max-width: 1520px;
+}
+.browse-hero .block-content .row {
+    max-width: 1520px;
+}
+.row.column-control--super-wide {
+    max-width: 1400px;
+}
+
+.browse-hero .large-12.columns {
+    padding: 0 60px;
+}
+
+.large-12 {
+    width: 100%;
+}
+
+.column, .columns {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+
+.column, .columns {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+
+.browse-hero .browse-breadcrumbs a, .browse-hero .browse-breadcrumbs a:hover {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.browse-hero .browse-breadcrumbs span {
+    color: #fff;
+}
+
+.browse-hero .section-image {
+    max-width: 80px;
+}
+
+.browse-hero .title2 h1 {
+    margin: 10px 0;
+    font-size: 40px;
+    line-height: 1.2;
+}
+.title2 h1.title--ultra, .title2 h2.title--ultra, .title2 h3.title--ultra, .title2 h4.title--ultra, .title2 h5.title--ultra, .title2 h6.title--ultra {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: gotham a,gotham b,sans-serif;
+}
+.block h1, .block h2, .block h3, .block h4, .block h5, .block h6 {
+    color: #fff;
+}
+
+.scribble-under {
+    display: inline-block;
+    line-height: 1.1;
+}
+.text-highlight-gradient, .scribble-under, .scribble-circle {
+    position: relative;
+    z-index: 2;
+}
+
+.scribble-under-block {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    position: absolute;
+    pointer-events: none;
+}
+
+.scribble-under-block img {
+    position: absolute;
+    left: .1em;
+    bottom: .0em;
+    transform: translateY(60%);
+    width: 100%;
+}
+
+.bg-image{
+    height: 389px !important;
+    opacity: 0.2;
+    background-image:url('../../assets/img/backgroud/it-ops.jpg')
+}
+
+.browse-hero .large-7.columns {
+    padding: 0 60px;
+}
+.column+.column:last-child, .columns+.columns:last-child {
+    float: right;
+}
+.browse-hero .left-column {
+    float: left!important;
+}
+
+.large-7 {
+    width: 58.33333%;
+}
+
+.browse-hero .browse-breadcrumbs {
+    padding: 10px 0;
+}
+.browse-hero .browse-breadcrumbs {
+    position: absolute;
+    top: -100px;
+    font-size: 12px;
+    color: #aaa;
+    padding: 0 5px;
+}
+
+.title {
+    top: 40%;
+    position: absolute;
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        top: 0%;
+        position: absolute;
+    }
+
+    body{
+        position: inherit;
+    }
+
+    .browse-hero .large-7.columns{
+        padding: 0px 30px;
+        width: 70%;
+    }
+
+    .section-description {
+        color: #fff;
+        text-align: left;
+        font-weight: 200;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    
+  }
+
+  .wave {
+    position: relative;
+    height: 70px;
+    background: #e0efe3;
+  }
+  .wave:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 60%;
+    height: 100px;
+    background-color: #222;
+    right: -5px;
+    top: 30px;
+  }
+  .wave:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-bottom-right-radius: 100%;
+    width: 50%;
+    height: 150px;
+    background-color: #e0efe3;
+    left: 0;
+    top: 10px;
+  }

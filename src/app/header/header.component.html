@@ -1,0 +1,149 @@
+<nav class="ps-nav ps-nav--desktop" role="navigation">
+    <div class="ps-nav--inner">
+        <div class="ps-nav--brand"><a href="/" class="ps-nav--logo"></a></div>
+        <div class="ps-nav--links hide-on-small-device" style="display: flex;">
+            <ul class="ps-nav--main">
+                <li (click)="selectedMenuItem = 0" [ngClass]="{'active-header-tabs-products': selectedMenuItem == 0}">
+                    <a href="#home" class="ps-nav--primary">Home</a>
+                </li>
+               <!-- <li (click)="selectedMenuItem = 1" [ngClass]="{'active-header-tabs-products': selectedMenuItem == '1'}">
+                    <a href="#aboutusContent" class="ps-nav--primary">Who Are We</a>
+                </li>-->
+                <li (click)="selectedMenuItem = 2" [ngClass]="{'active-header-tabs-products': selectedMenuItem == 2}">
+                    <a href="#services" class="ps-nav--primary">Services</a>
+                </li>
+                <!--<li (click)="selectedMenuItem = 3" [ngClass]="{'active-header-tabs-products': selectedMenuItem == '3'}">
+                    <a class="ps-nav--primary">Our Clients</a>
+                </li>
+                <li (click)="selectedMenuItem = 4" [ngClass]="{'active-header-tabs-products': selectedMenuItem == '4'}">
+                    <a class="ps-nav--primary"
+                        data-aa-header-title="Products">Our Products <span><i class="ps-nav--arrow"></i></span></a>
+                    <div class="header_dropdown" *ngIf="showProducts || selectedMenuItem == '4'">
+                        <div id="header_tabs--products" class="container-sm">
+                            <div class="header_tabs_content--container">
+                                <div class="header_tabs_column">
+                                    <div class="link-items">
+                                        <div class="link-products">
+                                            <a href="/product/skills" style="display: inline-flex;">
+                                                <img src="../../assets/img/logo.png" alt="Buy Local">
+                                                <div style="padding: 0px 0px 0px 15px;">Buy Local</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li (click)="selectedMenuItem = 5" [ngClass]="{'active-header-tabs-products': selectedMenuItem == '5'}">
+                    <a (click)="selectedMenuItem = 5" class="ps-nav--primary">Contact Us</a>
+                </li>-->
+            </ul>
+            <ul class="ps-nav--util">
+                <li class="ps-nav--contact">
+                    <div class="euro-phone-number euro-number-desktop" style="display:none;">
+                        <a href="tel:+441173741780">
+                            <span>Call us +441173741780</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210.4 210.39" width="20" height="20">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: none;
+                                            stroke: #ffffff;
+                                            stroke-width: 15;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                        }
+                                    </style>
+                                </defs>
+                                <path class="cls-1"
+                                    d="M606.15,228.84a22,22,0,0,0,0-31.13l-23.36-23.36a22,22,0,0,0-31.14,0l-12.8,12.81a33,33,0,0,0-4.17,41.55A511.84,511.84,0,0,0,677.77,371.8a33,33,0,0,0,41.55-4.16l12.81-12.81a22,22,0,0,0,0-31.13l-23.35-23.35a22,22,0,0,0-31.14,0l-7.78,7.78a522.93,522.93,0,0,1-71.5-71.51Z"
+                                    transform="translate(-528.68 -167.4)"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li class="ps-nav--search">
+                    <a href="#" class="ps-nav--primary">
+                        <svg viewBox="0 0 797 801" width="20" height="20" x="0px" y="0px">
+                            <path fill="white" stroke="white" stroke-width="40" class="st0" d="M763.6,743.8L508.9,490c22.5-24.3,40-51.9,52.5-82.6s19-64.1,19.6-100c-2.4-77.3-29.2-141.2-80.3-191.7
+                S386.3,39,310.8,37.2c-79.7,1.8-145,28-195.8,78.5S37.9,230.1,36,307.4c2.4,77.3,29.2,141.2,80.3,191.7s114.4,76.7,189.9,78.5
+                c34.1-0.6,65.7-6.4,94.9-17.3c29.2-11,56-26.5,80.3-46.6l253.8,254.7L763.6,743.8z M306.3,537.5c-65.1-1.8-119.3-24.3-162.5-67.6
+                S78,372.6,76.2,307.4c1.8-65.1,24.3-119.4,67.6-163s97.4-66.2,162.5-68c65.1,1.8,119.4,24.5,163,68s66.2,97.8,68,163
+                c-1.8,65.1-24.5,119.3-68,162.5S371.4,535.7,306.3,537.5z"></path>
+                        </svg>
+                    </a>
+                    <div class="header_dropdown" style="display:none;">
+                        <div id="header_tabs--search" class="container-lg">
+                            <div class="header_tabs_content--container">
+                                <div class="closebutton" tabindex="3"></div>
+                                <div class="header_nav--menu header_nav_search">
+                                    <div class="header_search search-button__component">
+                                        <form id="header_searchForm" class="header_search--form">
+                                            <input type="text" name="q" class="header_search--input"
+                                                placeholder="Search Pluralsight" autocomplete="off" tabindex="2">
+                                        </form>
+                                        <a href="/search" class="hidden header_search--url"></a>
+                                    </div>
+                                </div>
+                                <div id="header-search-results-all" class="header_tabs_content--container">
+                                    <div id="search-menu__results-dropdown" class="header_tabs_column">
+                                        <div id="header_dropdown--resultList"></div>
+                                        <div id="header_dropdown--resultListCourses"></div>
+                                    </div>
+                                    <div class="header_tabs_column paths">
+                                        <div id="header_dropdown--resultListPaths"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                     
+                    </div>
+                </li>
+               <!-- <li class="ps-nav--cta">
+                    <a href="#" class="ps-nav--primary">Sign in <span><i class="ps-nav--arrow"></i></span></a>
+                    <div class="header_dropdown" style="display: none;">
+                        <div id="header_tabs--signin" class="container-sm">
+                            <div class="closebutton " tabindex="3"></div>
+                            <div class="header_tabs_content--container">
+                                <div class="header_tabs_column">
+                                    <div class="link-items">
+                                        <a href="https://app.pluralsight.com/id?">
+                                            <div>Sign in with</div>
+                                            <img src="/etc/clientlibs/pluralsight/main/images/Skill_logo_white.png"
+                                                width="120" alt="Skills logo">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="header_tabs_column">
+                                    <div class="link-items">
+                                        <a href="https://app.pluralsight.com/id/flowusers">
+                                            <div>Sign in with</div>
+                                            <img src="/etc/clientlibs/pluralsight/main/images/Flow_Logo_white.png"
+                                                width="120" alt="Flow logo">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>-->
+            </ul>
+        </div>
+        <div class="ps-nav--hamburger show-on-small-device">
+            <a id="searchMobile" href="#">
+                <svg viewBox="0 0 797 801" width="20" height="20" x="0px" y="0px">
+                    <path fill="white" stroke="white" stroke-width="40" class="st0" d="M763.6,743.8L508.9,490c22.5-24.3,40-51.9,52.5-82.6s19-64.1,19.6-100c-2.4-77.3-29.2-141.2-80.3-191.7
+                                S386.3,39,310.8,37.2c-79.7,1.8-145,28-195.8,78.5S37.9,230.1,36,307.4c2.4,77.3,29.2,141.2,80.3,191.7s114.4,76.7,189.9,78.5
+                                c34.1-0.6,65.7-6.4,94.9-17.3c29.2-11,56-26.5,80.3-46.6l253.8,254.7L763.6,743.8z M306.3,537.5c-65.1-1.8-119.3-24.3-162.5-67.6
+                                S78,372.6,76.2,307.4c1.8-65.1,24.3-119.4,67.6-163s97.4-66.2,162.5-68c65.1,1.8,119.4,24.5,163,68s66.2,97.8,68,163
+                                c-1.8,65.1-24.5,119.3-68,162.5S371.4,535.7,306.3,537.5z"></path>
+                </svg>
+            </a>
+            <a id="menuMobile" href="#">
+                <div class="ps-nav--mobileMenu"></div>
+                <div class="ps-nav--mobileMenu"></div>
+                <div class="ps-nav--mobileMenu"></div>
+            </a>
+        </div>
+    </div>
+</nav>
